@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    background-color: #5C6575;
+    font-family: Helvetica;
+}
+.title {
+    margin: 0;
+    padding: 0 0.3em;
+}
+.navbar {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto auto auto 1fr 0;
+    align-items: center;
+    padding: 0 1.5em;
+    height: 10%;
+    color: #f0ebed;
+    background-color: #3C4755;
+}
+a {
+    color: #4394ff;
+}
+.navlink {
+    font-size: larger;
+    color: #f0ebed;
+    text-decoration: none;
+    margin-right: 1em;
+}
+.navlink:hover, .navlink:active {
+    text-decoration: underline;
+    text-decoration-color: #4394ff;
+    text-decoration-thickness: 2px;
+}
+.content {
+    height: 90%;
+    width: 60%;
+    margin: auto;
+    background-color: #3C473D;
+    color: #DEDCE4;
+}
+.sectiontitle {
+    text-align: center;
+    padding-top: 1em;
+    margin: 0;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.image {
+    margin: 1em;
+    aspect-ratio: auto;
+    width: 33em;
+    display: inline-block;
+}
+.text {
+    padding-top: 1em;
+    margin: 0;
+}
+.footer {
+    height: 17%;
+    background-color: #21272F;
+    padding-left: 1em;
+    padding-top: 0.2em;
+    text-align: center;
+    color: #f0ebed;
+}
+.fact {
+    padding-top: 1em;
+    text-align: center;
+}
+.sectionfact {
+    text-align: center;
+    margin: 0 auto;
+}
+.factlist {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0.5em;
+    list-style-position: inside;
+}
+.factitem {
+    padding-top: 0.5em;
+}
+.map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 2em;
+}
