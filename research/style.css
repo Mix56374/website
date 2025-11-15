@@ -1,0 +1,105 @@
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+}
+
+.button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:  0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.04);
+}
+
+.button:active {
+  background-color: #00438c;
+  transform: scale(1.08);
+  transition: 0.1s ease;
+}
+
+.compare {
+  border-radius: 10px;
+  width: 70%;
+}
+
+th, td {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  font-size: 85%;
+  cursor: default;
+  width: 25%;
+  transition: 0.3s ease;
+}
+
+span {
+  background-color: #757575;
+  color: #ffffff;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 7px;
+}
+
+.godot {
+  background-image: linear-gradient(135deg, #627dff, #5a669e); /*#6e86ff*/
+}
+
+.ursina {
+  background-image: linear-gradient(135deg, #d94ed9, #592059); /*#854785*/
+}
+
+.gamemaker {
+  background-image: linear-gradient(135deg, #45ce45, #387738); /*#48b848*/
+}
+
+th:hover, td:hover {
+  transform: scale(1.2);
+}
+
+tr {
+  background-color: #85858500;
+  border-radius: 20px;
+  display: flex;
+  width: 100%;
+  transition: 0.3s ease;
+}
+
+tr:hover {
+  background-color: #85858580;
+}
+
+.navbar {
+  display: flex;
+  background-color: #333;
+  overflow: hidden;
+  height: 60px;
+}
+
+.navlink {
+  display: flex;
+  align-items: center;
+  float: center;
+  cursor: pointer;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  padding: 0;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s ease;
+}
+
+
+.center {
+  display: flex;
+  justify-content: center;
+  /* height: 100vh; */
+}
