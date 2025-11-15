@@ -1,3 +1,7 @@
+.loading * {
+  transition: none !important;
+}
+
 body {
   font-family: Verdana, sans-serif;
   margin: 0;
@@ -29,7 +33,7 @@ body {
   width: 70%;
 }
 
-th, td {
+.compare th, td {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -40,7 +44,7 @@ th, td {
   transition: 0.3s ease;
 }
 
-span {
+.compare span {
   background-color: #757575;
   color: #ffffff;
   display: inline-block;
@@ -48,23 +52,11 @@ span {
   padding: 7px;
 }
 
-.godot {
-  background-image: linear-gradient(135deg, #627dff, #5a669e); /*#6e86ff*/
-}
-
-.ursina {
-  background-image: linear-gradient(135deg, #d94ed9, #592059); /*#854785*/
-}
-
-.gamemaker {
-  background-image: linear-gradient(135deg, #45ce45, #387738); /*#48b848*/
-}
-
-th:hover, td:hover {
+.compare th:hover, td:hover {
   transform: scale(1.2);
 }
 
-tr {
+.compare tr {
   background-color: #85858500;
   border-radius: 20px;
   display: flex;
@@ -72,8 +64,33 @@ tr {
   transition: 0.3s ease;
 }
 
-tr:hover {
+.compare tr:hover {
   background-color: #85858580;
+}
+
+.buttonh:hover {
+  background-color: #dfdfdf;
+}
+
+.godoth:hover {
+  background-color: #6e86ff;
+}
+.godot {
+  background-image: linear-gradient(135deg, #627dff, #5a669e); /*#6e86ff*/
+}
+
+.ursinah:hover {
+  background-color: #854785;
+}
+.ursina {
+  background-image: linear-gradient(135deg, #d94ed9, #592059); /*#854785*/
+}
+
+.gamemakerh:hover {
+  background-color: #48b848;
+}
+.gamemaker {
+  background-image: linear-gradient(135deg, #45ce45, #387738); /*#48b848*/
 }
 
 .navbar {
@@ -83,7 +100,7 @@ tr:hover {
   height: 60px;
 }
 
-.navlink {
+/* .navlink {
   display: flex;
   align-items: center;
   float: center;
@@ -95,11 +112,55 @@ tr:hover {
   text-decoration: none;
   font-size: 17px;
   transition: 0.3s ease;
-}
+} */
 
 
 .center {
   display: flex;
   justify-content: center;
   /* height: 100vh; */
+}
+
+.navbar button {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  float: center;
+  border: none;
+  padding-top: 0;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  background-color: #4b4b4b;
+  color: #dfdfdf;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.navbar button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.3s ease;
+}
+
+.navbar button span:after {
+  content: '⌵';
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 14px;
+  transition: 0.3s ease;
+}
+
+.navbar button:hover {
+  padding-top: 12px;
+  padding-bottom: 28px;
+  color: #000000;
+}
+
+.navbar button:hover span:after {
+  opacity: 1;
+  top: 13px;
+  color: #000000;
 }

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
   <!--<button class="button" onclick="page('page1.html')">Next Page</button>-->
-  <body>
+  <body class="loading">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 
     <div class="navbar">
-      <a class="navlink"><span>Home</span></a>
-      <!-- <a class="navlink" href="page1.html"><span>Page1</span><span></span></a> -->
+      <button onclick="page('home.html')" class="buttonh"><span>Home</span></button>
+      <button onclick="page('godot.html')" class="godoth"><span>Godot</span></button>
+      <button onclick="page('ursina.html')" class="ursinah"><span>Ursina</span></button>
+      <button onclick="page('gamemaker.html')" class="gamemakerh"><span>GameMaker</span></button>
     </div>
     <div class="center">
-      <table class="compare" border="0">
+      <table class="compare">
         <tr>
           <th></th>
           <th><span class="godot">Godot</span></th>
