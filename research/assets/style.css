@@ -1,0 +1,220 @@
+.loading * {
+  transition: none !important;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  color: #f1f1f1;
+  background-color: #dadada;
+  background-image: url("gradients/home.png");
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+/* .button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:  0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+  transform: scale(1.04);
+}
+
+.button:active {
+  background-color: #00438c;
+  transform: scale(1.08);
+  transition: 0.1s ease;
+} */
+
+.compare {
+  border-radius: 10px;
+  width: 70%;
+}
+
+.compare th, td {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 10px;
+  font-size: 85%;
+  cursor: default;
+  width: 25%;
+  transition: 0.3s ease;
+}
+
+.compare span {
+  background-color: #757575;
+  color: #ffffff;
+  display: inline-block;
+  border-radius: 20px;
+  padding: 7px;
+}
+
+.compare th:hover, td:hover {
+  transform: scale(1.2);
+}
+
+.compare tr {
+  background-color: #85858500;
+  border-radius: 20px;
+  display: flex;
+  width: 100%;
+  transform: scale(1.0);
+  transition: 0.3s ease;
+}
+
+.compare tr:hover {
+  background-color: #85858580;
+  transform: scale(1.075);
+}
+
+.buttonh:hover {
+  background-color: #b7b7b7;
+}
+
+.navbar .godot:hover {
+  background-color: #5ba9e7;
+  color: #050a0e;
+}
+.compare .godot, body.godot {
+  /* background-image: linear-gradient(135deg, #5ba9e7, #2e6b9a); */
+  color: #cde2f3;
+  background-color: #5ba9e7;
+  background-image: url("gradients/godot.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* background-position: center; */
+}
+
+.navbar .ursina:hover {
+  background-color: #775fff;
+  color: #05050d;
+}
+.compare .ursina, body.ursina {
+  /* background-image: linear-gradient(135deg, #40add8, #8859a7); */
+  color: #cfdbf3;
+  background-color: #40add8;
+  background-image: url("gradients/ursina.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.navbar .gamemaker:hover {
+  background-color: #97da57;
+  color: #060c02;
+}
+.compare .gamemaker, body.gamemaker {
+  /* background-image: linear-gradient(135deg, #97da57, #5d9726); */
+  color: #e0f1cd;
+  background-color: #060c02;
+  background-image: url("gradients/gamemaker.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  margin-top: 80px;
+  height: 200vh;
+}
+
+.navbar {
+  display: flex;
+  background-color: #333;
+  position: fixed;
+  top: 0px;
+  height: 60px;
+  width: 100vw;
+  z-index: 1;
+  transition: 0.3s ease;
+}
+
+.navbar .button:nth-last-child(2) {
+  border-bottom-right-radius: 20px;
+}
+
+.navbar .button {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding-top: 0;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  background-color: #4b4b4b;
+  color: #dfdfdf;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.navbar .button span {
+  display: inline-block;
+  position: relative;
+  transform: scale(0.9);
+  transition: 0.3s ease;
+}
+
+.navbar .button:hover span {
+  transform: scale(1.0);
+}
+
+.navbar .button span:after {
+  content: '⌵';
+  position: absolute;
+  opacity: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 14px;
+  transition: 0.3s ease;
+}
+
+.navbar .button:hover {
+  padding-top: 12px;
+  padding-bottom: 28px;
+  background-color: #dadada;
+  transform: scale(1.0);
+  color: #000000;
+}
+
+.navbar .button:hover span:after {
+  opacity: 1;
+  top: 13px;
+}
+
+.top {
+  top: -60px;
+}
+
+.navbutton {
+  position: relative;
+  top: 0;
+  transform: rotate(-90deg);
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  display: block;
+  padding-bottom: 12px;
+  font-size: 45px;
+  margin-left: auto;
+  color: #dadada;
+  transition: 0.3s ease;
+}
+
+.toptoggle {
+  top: 60px;
+  transform: rotate(90deg);
+  color: #000000;
+}
