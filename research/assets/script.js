@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }, 10);
 
   window.addEventListener('scroll', function() {
-    if (window.scrollY == 0) {
+    if (window.scrollY <= 0) {
       navbar.classList.remove('top');
       navbutton.classList.remove('toptoggle');
     } else if (!navbar.classList.contains('top')) {
