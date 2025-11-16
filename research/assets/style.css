@@ -80,8 +80,8 @@ body {
 }
 
 .navbar .godot:hover {
-  background-color: #5ba9e7;
-  color: #050a0e;
+  background-color: #5ba9e7 !important;
+  color: #050a0e !important;
 }
 .compare .godot, body.godot {
   /* background-image: linear-gradient(135deg, #5ba9e7, #2e6b9a); */
@@ -94,8 +94,8 @@ body {
 }
 
 .navbar .ursina:hover {
-  background-color: #775fff;
-  color: #05050d;
+  background-color: #775fff !important;
+  color: #05050d !important;
 }
 .compare .ursina, body.ursina {
   /* background-image: linear-gradient(135deg, #40add8, #8859a7); */
@@ -107,8 +107,8 @@ body {
 }
 
 .navbar .gamemaker:hover {
-  background-color: #97da57;
-  color: #060c02;
+  background-color: #97da57 !important;
+  color: #060c02 !important;
 }
 .compare .gamemaker, body.gamemaker {
   /* background-image: linear-gradient(135deg, #97da57, #5d9726); */
