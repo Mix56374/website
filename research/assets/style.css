@@ -12,26 +12,97 @@ body {
   margin: 0;
 }
 
-/* .button {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header {
+  margin-bottom: -95px !important;
+}
+
+.footer button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
-  border-radius: 5px;
+  padding-top: 0;
+  text-align: center;
+  width: 110px;
+  font-size: 28px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #4b4b4b;
   cursor: pointer;
-  transition:  0.3s ease, transform 0.3s ease;
+  contain: content;
+  transition: 0.3s ease;
 }
 
-.button:hover {
-  background-color: #0056b3;
-  transform: scale(1.04);
+.footer button span {
+  display: inline-block;
+  position: relative;
+  background-color: #00000000 !important;
+  color: #dfdfdf;
+  cursor: pointer !important;
+  transform: scale(0.9);
 }
 
-.button:active {
-  background-color: #00438c;
-  transform: scale(1.08);
-  transition: 0.1s ease;
-} */
+.footer .back span {
+  left: 0;
+}
+
+.footer .forward span {
+  right: 0;
+}
+
+.footer button:hover span {
+  transform: scale(1.0);
+  color: #0f0f0f;
+}
+
+.footer .forward:hover span {
+  right: 10%;
+}
+
+.footer .back:hover span {
+  left: 10%;
+}
+
+.footer .forward span:after {
+  content: '>';
+  left: 105%;
+}
+
+.footer .back span:after {
+  content: '<';
+  right: 115%;
+}
+
+.footer button span:after {
+  position: absolute;
+  opacity: 0;
+  color: #dfdfdf;
+  transition: 0.3s ease;
+}
+
+.footer button:hover {
+  background-color: #dadada;
+  transform: scale(1.0);
+}
+
+.footer button:hover span:after {
+  opacity: 1;
+  color: #0f0f0f;
+}
+
+.footer .forward:hover span:after {
+  left: 97%;
+}
+
+.footer .back:hover span:after {
+  right: 97%;
+}
+/*  */
 
 .compare {
   border-radius: 10px;
@@ -363,6 +434,7 @@ a:hover {
   background-color: #4b4b4b;
   color: #dfdfdf;
   cursor: pointer;
+  contain: content;
   transition: 0.3s ease;
 }
 
@@ -383,7 +455,7 @@ a:hover {
   opacity: 0;
   left: 50%;
   transform: translateX(-50%);
-  top: 0.7em;
+  top: 100%;
   transition: 0.3s ease;
 }
 
@@ -397,7 +469,7 @@ a:hover {
 
 .navbar .button:hover span:after {
   opacity: 1;
-  top: 13px;
+  top: 40%;
 }
 
 .top {
