@@ -450,7 +450,8 @@ a:hover {
 }
 
 .navbar .button span:after {
-  content: '⌵';
+  /* content: '⌵'; */
+  content: 'v';
   position: absolute;
   opacity: 0;
   left: 50%;
@@ -469,7 +470,8 @@ a:hover {
 
 .navbar .button:hover span:after {
   opacity: 1;
-  top: 40%;
+  /* top: 40%; */
+  top: 55%;
 }
 
 .top {
