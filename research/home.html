@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>Research - Home</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
   </head>
   <body class="loading">
     <link rel="stylesheet" href="assets/style.css">
@@ -13,6 +15,9 @@
       <button onclick="page('ursina.html')" class="button ursina"><span>Ursina</span></button>
       <button onclick="page('gamemaker.html')" class="button gamemaker"><span>GameMaker</span></button>
       <button onclick="toggle_nav_bar()" id="navbutton">»</button>
+    </div>
+    <div class="title home center">
+      <h1><span>Comparison Table</span></h1>
     </div>
     <div class="center">
       <table class="compare">
@@ -113,6 +118,44 @@
           <td><span class="gamemaker">2D games with, or without, prior programming knowledge.</span></td>
         </tr>
       </table>
+    </div>
+    <div class="title home">
+      <div class="conclusion">
+        <h1 class="center"><span>Conclusion</span></h1>
+        <p><span>For my next project, I would choose Godot because it allows for flexible creation of 2D and 3D games, even simultaneously. Godot has many online tutorials and resources and its coding language is easy to understand for anyone with some Python or Lua experience. Godot has a previewer for 2D and 3D scenes allowing for easy creation of level designs.  Godot offers a sufficiently wide range of platforms to export games to, such as: Windows, Linux, Mac, iOS, Android, web, and some VR devices. It would also be possible, though difficult, to export games for consoles. There is an option to hire a third party to export Godot games to console, if necessary.</span></p>
+        <p><span>I prefer Godot to GameMaker because it is more flexible and allows for more in depth coding.  GameMaker is also limited to 2D, while Godot has 2D and 3D functionality.  In addition, distributing a game via GameMaker would cost at least $100 and has the potential to become very expensive with an enterprise tier subscription which costs $800 per year or $80 per month. Conversely, it would be free to distribute a game made via Godot.  Godot is also free and completely open source, whereas you would need the expensive enterprise tier subscription in order to alter the source code with GameMaker.</span></p>
+        <p><span>As for why I prefer Godot to Ursina, Godot's user interface allows developers to implement features much faster than they could in Ursina, such as built in physics simulators or lighting. One notable bottleneck in Ursina is that there is no way to preview a 3D scene without running it, while Godot offers a previewer.  Godot also supports both UDP Networking and TCP Networking while Ursina only supports UDP Networking.  UDP Networking is faster, but less reliable, while TCP Networking is more reliable, but with some latency. I would prefer to have the choice, as it may be optimal to prioritize either speed or precision when designing multiplayer games.</span></p>
+        <p><span>In conclusion, Godot offers a wide range of free features to assist with game development and eventual distribution.</span></p>
+      </div>
+      <div>
+        <h1 class="center"><span>Hands-On Demo</span></h1>
+        <div class="analysis">
+          <img src="assets/images/demo/scene.jpeg">
+          <img src="assets/images/demo/script.jpeg">
+          <img src="assets/images/demo/test.jpeg">
+          <dd>I first created a new project, and clicked <i>2D Scene</i> under <i>Create Root Node</i> to create a new 2D scene to edit. After that I right clicked on the <i>Node2D</i> object in the scene, clicked <i>Add Child Node</i>, searched for the <i>Label</i> node, and pressed <i>Create</i>. Finally I edited the properties on the right to make the font bigger, and for it it say "Hello World!".</dd>
+          <dd>I then right clicked on the <i>Label</i> node, clicked on the <i>Attach Script</i> option, and pressed <i>Create</i>. Then after it opened up the script, I removed most of the code except for the first line and the function called <i>_ready()</i>, which I put the code <i>print("Hello World!")</i> in.</dd>
+          <dd>After all of this I pressed the <i>Run Project</i> arrow at the top right of the window to run my project, and saw the <i>Hello World!</i> label in the debug window, and <i>Hello World!</i> printed in the console.</dd>
+        </div>
+        <div>
+        <h1 class="center"><span>Works Cited</span></h1>
+          <p><span><i>Klubnika, Mike. “Mike Klubnika.” Mikeklubnika.com, 2023, mikeklubnika.com/games/buckshot_roulette. Accessed 14 Nov. 2025.</i></span></p>
+          <p><span><i>“Godot (Game Engine).” Wikipedia, 10 Mar. 2020, en.wikipedia.org/wiki/Godot_(game_engine).</i></span></p>
+          <p><span><i>“LinkedIn.” Linkedin.com, 2025, www.linkedin.com/company/godot-engine. Accessed 14 Nov. 2025.</i></span></p>
+          <p><span><i>Engine, Godot. “Godot Engine - Features.” Godotengine.org, godotengine.org/features.</i></span></p>
+          <p><span><i>cite</i></span></p>
+          <p><span><i>pokepetter. “GitHub - Pokepetter/Ld44_life_is_currency: My Game for Ludum Dare #44.” GitHub, 2025, github.com/pokepetter/ld44_life_is_currency. Accessed 14 Nov. 2025.</i></span></p>
+          <p><span><i>“Ursina Engine Faq.” Ursinaengine.org, 2025, www.ursinaengine.org/faq. Accessed 14 Nov. 2025.</i></span></p>
+          <p><span><i>“Ursina Engine Documentation.” Ursinaengine.org, 2025, www.ursinaengine.org/documentation. Accessed 14 Nov. 2025.</i></span></p>
+          <p><span><i>Mike. “Ursina Engine - GameFromScratch.com.” GameFromScratch.com, 27 Jan. 2020, gamefromscratch.com/ursina-engine. Accessed 14 Nov. 2025.</i></span></p>
+          <p><span><i>cite</i></span></p>
+          <p><span><i>Fox, Toby. “UNDERTALE.” Undertale.com, 2019, undertale.com/about/.</i></span></p>
+          <p><span><i>“GameMaker.” Wikipedia, 6 June 2020, en.wikipedia.org/wiki/GameMaker.</i></span></p>
+          <p><span><i>“GameMaker Manual.” Gamemaker.io, 2025, manual.gamemaker.io/monthly. Accessed 14 Nov. 2025.</i></span></p>
+          <p><span><i>Bramble, Ross. “What Platforms Can I Export My Game to with GameMaker?” Gamemaker.io, 2023, gamemaker.io/en/blog/export-with-gamemaker.</i></span></p>
+          <p><span><i>cite</i></span></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

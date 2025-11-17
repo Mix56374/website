@@ -99,7 +99,8 @@ body {
   color: #cfdbf3;
   background-color: #40add8;
   background-image: url("gradients/ursina.png");
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   background-position: center;
 }
 
@@ -112,7 +113,8 @@ body {
   color: #e0f1cd;
   background-color: #97da57;
   background-image: url("gradients/gamemaker.png");
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   background-position: center;
 }
 
@@ -123,10 +125,10 @@ body {
 
 .title .intro {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  margin-left: 30%;
-  margin-right: 30%;
+  /* margin-left: 15%;
+  margin-right: 15%; */
 }
 
 .title span {
@@ -142,30 +144,31 @@ body {
   transform: scale(1.05);
 }
 
+.title.home span {
+  background-color: #85858500;
+}
+.title.home span:hover, .title.home .logo:hover {
+  background-color: #85858580;
+}
+
 .title.godot span {
   background-color: #2e6b9a00;
 }
-.title.godot span:hover {
+.title.godot span:hover, .title.godot .logo:hover {
   background-color: #2e6b9a;
 }
 .title.godot .logo {
   background-color: #5ba9e7;
 }
-.title.godot .logo:hover {
-  background-color: #2e6b9a;
-}
 
 .title.ursina span {
   background-color: #7459a700;
 }
-.title.ursina span:hover {
+.title.ursina span:hover, .title.ursina .logo:hover {
   background-color: #7459a7;
 }
 .title.ursina .logo {
   background-color: #43bbeb;
-}
-.title.ursina .logo:hover {
-  background-color: #7459a7;
 }
 
 .title.gamemaker span {
@@ -183,6 +186,7 @@ body {
 
 .title h1 {
   font-size: 250%;
+  margin-left: 35px;
 }
 
 .title .logo {
@@ -206,6 +210,7 @@ body {
 .info {
   margin-top: 10px;
   margin-bottom: 60px;
+  margin-left: 35px;
 }
 
 .info div {
@@ -245,6 +250,10 @@ a:hover {
   margin: 0;
 }
 
+.home .analysis dd {
+  text-align: center;
+}
+
 .analysis dd {
   margin: 30px;
   margin-bottom: 40px;
@@ -269,6 +278,7 @@ a:hover {
   display: grid;
   grid-template-columns: auto auto;
   row-gap: 8px;
+  align-items: center;
 }
 
 .bottom dd {
@@ -291,11 +301,21 @@ a:hover {
   border-radius: 10px;
 }
 
-.bottom > div img {
+.bottom > div img, .title.home img {
   width: 80%;
   border-radius: 10px;
   transform: scale(1.0);
+  z-index: 0;
   transition: 0.3s ease;
+}
+
+.title.home img {
+  width: 97%;
+}
+
+.title.home img:hover {
+  transform: scale(1.1);
+  z-index: 1;
 }
 
 .bottom > div img:hover {
@@ -305,9 +325,15 @@ a:hover {
 .center {
   display: flex;
   justify-content: center;
-  margin: 20px;
-  margin-top: 80px;
-  height: 200vh;
+  margin-bottom: 0;
+}
+
+.center p {
+  text-indent: 4em;
+}
+
+.conclusion {
+  margin-top: -50px;
 }
 
 .navbar {
@@ -357,7 +383,7 @@ a:hover {
   opacity: 0;
   left: 50%;
   transform: translateX(-50%);
-  top: 14px;
+  top: 0.7em;
   transition: 0.3s ease;
 }
 
