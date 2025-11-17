@@ -4,8 +4,8 @@
 
 body {
   font-family: Verdana, sans-serif;
-  color: #f1f1f1;
-  background-color: #dadada;
+  color: #0f0f0f;
+  background-color: #f1f1f1;
   background-image: url("gradients/home.png");
   background-size: cover;
   background-position: center;
@@ -36,6 +36,7 @@ body {
 .compare {
   border-radius: 10px;
   width: 70%;
+  color: #f1f1f1;
 }
 
 .compare th, td {
@@ -75,10 +76,6 @@ body {
   transform: scale(1.075);
 }
 
-.buttonh:hover {
-  background-color: #b7b7b7;
-}
-
 .navbar .godot:hover {
   background-color: #5ba9e7 !important;
   color: #050a0e !important;
@@ -102,8 +99,7 @@ body {
   color: #cfdbf3;
   background-color: #40add8;
   background-image: url("gradients/ursina.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
 }
 
@@ -116,9 +112,172 @@ body {
   color: #e0f1cd;
   background-color: #97da57;
   background-image: url("gradients/gamemaker.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position: center;
+}
+
+.title {
+  margin: 80px;
+  margin-top: 90px;
+}
+
+.title .intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.title span {
+  transform: scale(1);
+  display: inline-block;
+  padding: 4px;
+  margin: -4px;
+  border-radius: 20px;
+  cursor: default;
+  transition: 0.3s ease;
+}
+.title span:hover {
+  transform: scale(1.05);
+}
+
+.title.godot span {
+  background-color: #2e6b9a00;
+}
+.title.godot span:hover {
+  background-color: #2e6b9a;
+}
+.title.godot .logo {
+  background-color: #5ba9e7;
+}
+.title.godot .logo:hover {
+  background-color: #2e6b9a;
+}
+
+.title.ursina span {
+  background-color: #7459a700;
+}
+.title.ursina span:hover {
+  background-color: #7459a7;
+}
+.title.ursina .logo {
+  background-color: #43bbeb;
+}
+.title.ursina .logo:hover {
+  background-color: #7459a7;
+}
+
+.title.gamemaker span {
+  background-color: #5d972600;
+}
+.title.gamemaker span:hover {
+  background-color: #5d9726;
+}
+.title.gamemaker .logo {
+  background-color: #a3e069;
+}
+.title.gamemaker .logo:hover {
+  background-color: #5d9726;
+}
+
+.title h1 {
+  font-size: 250%;
+}
+
+.title .logo {
+  transform: scale(1);
+  display: inline-block;
+  padding: 8px;
+  margin: -8px;
+  border-radius: 20px;
+  cursor: default;
+  transition: 0.3s ease;
+}
+.title .logo:hover {
+  transform: scale(1.1);
+}
+
+.title .logo img {
+  height: 220px;
+  aspect-ratio: 1/1;
+}
+
+.info {
+  margin-top: 10px;
+  margin-bottom: 60px;
+}
+
+.info div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.info dt {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.info dd {
+  margin: 0;
+  margin-left: 6px;
+}
+
+.analysis {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 33% 34% 33%;
+}
+
+.analysis a {
+  color: inherit;
+  transition: 0.3s ease;
+}
+.analysis a:hover {
+  color: #ff5858;
+}
+
+.analysis dt {
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+  margin: 0;
+}
+
+.analysis dd {
+  margin: 30px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.bottom > div {
+  text-align: center;
+}
+
+.bottom > div p {
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.bottom > div iframe {
+  width: 80%;
+}
+
+.bottom > div img {
+  width: 80%;
+  border-radius: 10px;
+  transform: scale(1.0);
+  transition: 0.3s ease;
+}
+
+.bottom > div img:hover {
+  transform: scale(1.05);
 }
 
 .center {
@@ -145,8 +304,8 @@ body {
 }
 
 .navbar .button {
-  justify-content: center;
   display: flex;
+  justify-content: center;
   align-items: center;
   border: none;
   padding-top: 0;
@@ -197,10 +356,11 @@ body {
   top: -60px;
 }
 
-.navbutton {
+#navbutton {
   position: relative;
   top: 0;
-  transform: rotate(-90deg);
+  --rot: -90deg;
+  transform: rotate(var(--rot)) scale(0.9);
   right: 15px;
   background: none;
   border: none;
@@ -208,15 +368,19 @@ body {
   height: 60px;
   width: 60px;
   display: block;
-  padding-bottom: 12px;
+  padding-bottom: 20px;
   font-size: 45px;
   margin-left: auto;
   color: #dadada;
   transition: 0.3s ease;
 }
 
-.toptoggle {
+#navbutton:hover {
+  transform: rotate(var(--rot)) scale(1.1);
+}
+
+.top #navbutton {
   top: 60px;
-  transform: rotate(90deg);
+  --rot: 90deg;
   color: #000000;
 }
