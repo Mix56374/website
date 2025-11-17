@@ -230,11 +230,11 @@ body {
   grid-template-columns: 33% 34% 33%;
 }
 
-.analysis a {
+a {
   color: inherit;
   transition: 0.3s ease;
 }
-.analysis a:hover {
+a:hover {
   color: #ff5858;
 }
 
@@ -264,6 +264,25 @@ body {
   padding-left: 15%;
   padding-right: 15%;
 }
+
+.bottom .info {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 8px;
+}
+
+.bottom dd {
+  text-align: left;
+}
+.bottom dd span {
+  padding: 5px;
+}
+
+.bottom > div .info {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 
 .bottom > div iframe {
   width: 80%;
