@@ -102,7 +102,6 @@ body {
 .footer .back:hover span:after {
   right: 97%;
 }
-/*  */
 
 .compare {
   border-radius: 10px;
@@ -198,8 +197,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-left: 15%;
-  margin-right: 15%; */
 }
 
 .title span {
@@ -347,7 +344,7 @@ a:hover {
 
 .bottom .info {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: min-content auto;
   row-gap: 8px;
   align-items: center;
 }
