@@ -13,7 +13,7 @@ body {
     grid-template-columns: auto auto auto 1fr 0;
     align-items: center;
     padding: 0 1.5em;
-    height: 10%;
+    height: 6vh;
     color: #f0ebed;
     background-color: #3C4755;
 }
@@ -48,9 +48,9 @@ a {
     grid-template-columns: 1fr 1fr;
 }
 .image {
-    margin: 1em;
+    margin: 5%;
     aspect-ratio: auto;
-    width: 33em;
+    width: 90%;
     display: inline-block;
 }
 .text {
