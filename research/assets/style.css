@@ -448,11 +448,11 @@ a:hover {
 
 .navbar .button span:after {
   /* content: '⌵'; */
-  content: 'v';
+  content: '^';
   position: absolute;
   opacity: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-50%) rotate(180deg);
   top: 100%;
   transition: 0.3s ease;
 }
